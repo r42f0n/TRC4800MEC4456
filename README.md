@@ -1,33 +1,33 @@
 java c
 Department of Mechanical and Aerospace Engineering 
 TRC4800/MEC4456 Robotics 
-PC 8: Joint Control
-Objective: To model the dynamics and master the partitioned controller design of robotic systems.
-Problem 1. Prove that the torque equation for the mechanism shown in Figure 1 is
+PC 7: Dynamics 2 
+Objective: To master the dynamical analysis of robotic systems using the iterative Newton-Euler algorithm.
 
-where gear ratio 
-What are the effective inertia and effecting damping terms of the system?
+Figure 1: 2-DOF RP and RR manipulators
+Problem 1. Compute the joint torque and force of the system defined in Figure 1a using the iterative Newton-Euler algorithm. Assume zero initial conditions, but include the gravity term g in the y0 direction. The inertia tensors are:
 
-Figure 1: Mechanism for Problem 1.
-Problem 2. The torque equation for joint 1 for the manipulator shown in Figure 2 is
+Formula for rotating inertia tensors:
 
-where masses are point masses at the end of each link.
+Problem 2. Compute the joint torques of the system defined in Figure 1b using the iterative Newton-Euler algorithm when it is under the following conditions:
 
-Figure 2: A two-link RR manipulator.
-Compute the variation (as a percentage of the maximum) of inertia “seen" by joint 1 of the manipulator as it changes configuration. Use the numerical values
-l1 = l2 = 0:5 m m1 = 4:0 kg                        m2 = 2:0 kg
-Consider 代 写TRC4800/MEC4456 Robotics PC 8: Joint ControlR
-代做程序编程语言that the robot is direct drive and that the rotor inertia is negligible.
-Hint: Find the manipulator's mass matrix.
-Repeat the calculation for the case of a geared robot (use η = 20) and a rotor inertia of Im = 0:01 kgm2.
-Problem 3. In a system like that shown in Figure 3, find the criteria for KD and KP of a PD controller such that the system is never unstable and never underdamped. Design the PD control to control τ (solve the torque balance equations for τ, rather than τm).
-The system possesses an un-modelled resonance due to an end-point stiffness K (on the non motor side, not shown in figure). Any damping terms in the system are negligible. Also, η = R1/R2 >1.
+With the following parameters:
 
-Figure 3: Mechanical model of a DC torque motor connected through gearing to inertial load.
+Problem 3. Using MATLAB, form. the symbolic derivation of the dynamic equations to the plotting of the trajectory and torque profil代 写TRC4800/MEC4456 Robotics PC 7: Dynamics 2Matlab
+代做程序编程语言es, for the 3-dof robot shown in Figure 2.
+a. Using the Newton-Euler method, obtain the dynamics equations of the system. Assume there are no forces or moments acting on the end effector.
 
+Figure 2: RRP Robot
 
+Assume the centre of mass of each link located at the centre of the link. The inertia of each link is given as:
 
+Submit the final symbolic equations (Matlab output) and all Matlab file(s) used to generate them.
+b. Using cubic splines create a smooth trajectory for each joint given the following information, where each value corresponds to a different time:
 
+Generate the velocity and acceleration profiles of each joint.
+Plot the torque/force profile for the 3 actuators, given the following values:
+
+What are the maximum torques or forces exerted by each actuator?
 
 
 
